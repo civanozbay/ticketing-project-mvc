@@ -31,5 +31,6 @@ public class User extends BaseEntity{
         this.phone = phone;
         this.role = role;
         this.gender = gender;
+
     }
 }
