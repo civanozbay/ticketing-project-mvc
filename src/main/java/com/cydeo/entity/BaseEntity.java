@@ -10,11 +10,11 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Data
 public class BaseEntity {
+
     private Long id;
     private LocalDateTime insertDateTime;
     private Long insertUserId;
-    private LocalDateTime LastUpdateLocalDateTime;
+    private LocalDateTime lastUpdateDateTime;
     private Long lastUpdateUserId;
-
 
 }

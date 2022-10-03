@@ -6,9 +6,10 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesBindin
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
+
 @Component
 @ConfigurationPropertiesBinding
-public class RoleDtoConverter implements Converter<String , RoleDTO> {
+public class RoleDtoConverter implements Converter<String, RoleDTO> {
 
     RoleService roleService;
 
