@@ -1,9 +1,11 @@
 package com.cydeo.bootstrap;
 
+import com.cydeo.dto.ProjectDTO;
 import com.cydeo.dto.RoleDTO;
 import com.cydeo.dto.UserDTO;
 import com.cydeo.enums.Gender;
 import com.cydeo.enums.Status;
+import com.cydeo.service.ProjectService;
 import com.cydeo.service.RoleService;
 import com.cydeo.service.UserService;
 import org.springframework.boot.CommandLineRunner;
@@ -17,11 +19,10 @@ public class DataGenerator implements CommandLineRunner {
    RoleService roleService;
    UserService userService;
    ProjectService projectService;
-
-    public DataGenerator(RoleService roleService, UserService userService, ProjectService projectService) {
+    public DataGenerator(RoleService roleService, UserService userService,ProjectService projectService) {
         this.roleService = roleService;
         this.userService = userService;
-        this.projectService = projectService;
+        this.projectService=projectService;
     }
 
     @Override

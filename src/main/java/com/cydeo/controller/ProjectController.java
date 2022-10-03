@@ -15,7 +15,7 @@ public class ProjectController {
     ProjectService projectService;
     UserService userService;
 
-    public ProjectController(ProjectService projectService, UserService userService) {
+    public ProjectController(UserService userService,ProjectService projectService) {
         this.projectService = projectService;
         this.userService = userService;
     }
